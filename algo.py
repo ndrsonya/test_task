@@ -1,16 +1,16 @@
-# SPACE COMPLEXITY
+# Time COMPLEXITY
 # Time complexity is O(n) - linear algorithm,
 # As we have one loop to go through all chars in string.
 
 # SPACE COMPLEXITY
 # Space complexity is O(n)
 
-filename = 'input.txt'
 inputList = []
 outputList = []
 
 # Read input from the file
-with open(filename) as f_obj:
+file1 = 'input.txt'
+with open(file1) as f_obj:
     for line in f_obj:
         inputList.append(line.rstrip())
 
@@ -42,7 +42,7 @@ if inputList:
 
 
 # Writing output to the text file
-filename2 = 'output.txt'
-with open(filename2, 'w') as f:
+file2 = 'output.txt'
+with open(file2, 'w') as f:
     for element in outputList:
         f.write(element + "\n")
