@@ -15,7 +15,7 @@ with open(file1) as f_obj:
         inputList.append(line.rstrip())
 
 
-# Function for converting strings into output list of Strings
+# Function for converting strings and adding them to output list of Strings
 def convert_string(string):
     length = len(string)
     count = 1
